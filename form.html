@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+
+  </head>
+  <body>
+      <div class="container">
+        
+        <h1>Form Validation</h1>
+        <form class="form"> 
+ 
+        <label for="rollno" >Enter Roll Number:</label> 
+          <input type="text" class="inputFeilds" id="rollno" placeholder="XXF-XXXX" onkeyup="checkRollNo()" style="padding: 1%; width: 25%;"> <br>
+          <br /><label class="error" id="error1"></label> 
+          <label for="name"  >Enter Your Name:</label> 
+         <input type="text" class="inputFeilds" id="name" placeholder="Dua Sultan" onkeyup="checkName()" style="padding: 1%; width: 25%;"/> <br>
+         <br /><label class="error" id="error2"></label>
+         <label for="CNIC"> Enter your CNIC: </label>
+         <input type="text" class="inputFields" id="CNIC" placeholder="33100-2348965-8"  onkeyup="checkCNIC()"  style="padding: 1%; width: 25%;"/> <br>
+         <br /><label class="error" id="error3"></label> 
+         <label for="mobileNo"> Enter Mobile Number: </label>
+         <input type="text" class="inputFields" id="mobileNo" placeholder="+92 3232245678"  onkeyup="checkMobNo()"  style="padding: 1%; width: 25%;"><br>
+         <br /><label class="error" id="error4"></label>
+         <label for="landline"> Enter Landline Number: </label>
+         <input type="text" class="inputFields" id="landline" placeholder="+41 867905132" onkeyup="checkLandline()"  style="padding: 1%;  width: 25%" /> <br>
+         <br /><label class="error" id="error5"></label>
+         <label> Enter your Email: </label>
+         <input type="text" class="inputFields" id="email" placeholder="abcd@nu.edu.pk" onkeyup="checkEmail()"  style="padding: 1%; width: 25%;"/><br>
+         <br /><label class="error" id="error6"></label> 
+         <label for="courses">Enrolled Courses :</label>
+         <input type="number" class="inputFields" id="courses" placeholder="3-5" onkeyup="checkCourse()" style="padding: 1%;  width:25%"/> <br>
+         <br /><label class="error" id="error7"></label>
+         <button class="button" type="button" onclick= "checkFinal()" >SUBMIT</button>
+         <br /><label class="error" id="error8"></label>
+<br>
+</form>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
